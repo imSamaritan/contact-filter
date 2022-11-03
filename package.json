@@ -1,0 +1,47 @@
+{
+  "name": "front-end-env",
+  "version": "1.0.0",
+  "description": "A webpack project setup environment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf dist && webpack --config webpack.dev.js",
+    "build": "rm -rf dist && webpack --config webpack.prod.js",
+    "serve": "live-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imSamaritan/front-end-env.git"
+  },
+  "keywords": [
+    "javascript",
+    "ES2015",
+    "webpack",
+    "babel",
+    "sass"
+  ],
+  "author": "imsamaritan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imSamaritan/front-end-env/issues"
+  },
+  "homepage": "https://github.com/imSamaritan/front-end-env#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^9.0.1",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
