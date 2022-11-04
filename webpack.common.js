@@ -31,7 +31,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Contact - Filtering',
+			title: 'Contact - Book',
 			filename: 'index.html',
 			template: path.resolve(__dirname, 'src/views/index.html')
 		})
