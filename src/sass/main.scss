@@ -1,9 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 @import url('../../node_modules/materialize-css/dist/css/materialize.min.css');
 @import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 @import './components/_reset';
 @import './components/_variables';
+@import './components/_responsive';
 
 body {
 	font-family: 'Nunito', sans-serif;
 }
+
+.container header {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.filtering-section {
+	padding: 5px 0 50px 0;
+}
+
+.activate-btn {
+	cursor: pointer;
+	font-size: 25px;
+	position: relative;
+}
+
+.no-active {
+		transform: scale(0);
+}
+
+.active {
+	transform: scale(1);
+}
+
+.pop-up-box {
+	width: 52%;
+	margin: 0 auto;
+	padding: 10px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.3);
+	border-radius: 7px;
+	position: absolute;
+	z-index: 1000;
+	background-color: white;
+	transition: transform .3s ease-in-out;
+	left: 10%;
+}
+
+.close-btn, .bi-person-plus-fill {
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.btn {
+	background-color: #333;
+}
+
+.btn:hover {
+	background-color: #222;
+}
+
+// .menu-btn:hover + .pop-up-box {
+// 	transform: scale(1);
+// }
+
+// Contact
+
+.bi-three-dots {
+	cursor: pointer;
+	font-size: 18px;
+	color: rgb(65, 65, 65);
+}
+
+.bi-person-rolodex {
+	font-size: 35px;
+}
+
+li {
+	position: relative;
+	width: 100% !important;
+}
+
+.more-tools-box {
+	position: absolute;
+	width: 80px;
+	padding: 15px 10px;
+	background-color: white;
+	box-shadow: 0 1px 2px rgba(0,0,0,2);
+	z-index: 1000 !important;
+	border-radius: 7px;
+	transition: transform .3s ease-in-out;
+	left: -450%;
+	top: -200%;
+}
+
+.more-tools-box > p {
+	margin: 15px 0;
+	cursor: pointer;
+	color: #333;
+}
+
