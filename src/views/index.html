@@ -9,14 +9,14 @@
 <body>
 	
 	<div class="container">
-		<header class="grey-text text-darken-1 left-align">
+		<!-- <header class="grey-text text-darken-1 left-align">
 			<h1 class="hide-on-small-only">Contact - Boook</h1>
 			<h4 class="hide-on-med-and-up">Contact - Book</h4>
-		</header>
+		</header> -->
 		
 		<div class="filtering-section row">
 			<!-- Filtering input section -->
-				<form class="col s11 m8">
+				<form class="col s11 m8" id="filter-form">
 					<div class="input-field row">
 						<span class="bi bi-filter-square prefix grey-text"></span>
 						<input id="filter" type="text" placeholder="Search...">
@@ -30,7 +30,7 @@
 				<div class="pop-up-box no-active">
 					<span class="bi bi-x-circle-fill close-btn"></span>
 					<div class="row">
-						<form class="col s12">	
+						<form class="col s12 add" id="contact-form">	
 							<div class="input-field">
 								<input type="text" id="name" placeholder="Content name">
 							</div>
@@ -48,40 +48,15 @@
 			</div>
 			<!-- Add contact pop up box section END-->
 		</div>
-
+		<h5 class="number-of-contacts valign-center"></h5>
+	<!-- Contact list section -->
 		<div class="contacts row">
 			<div class="col s12 m8">
-				<ul class="collection with-header">
-					<li class="collection-header grey-text text-darken-1"><h3>A</h3></li>
-					<li class="collection-item avatar">
-						<span class="bi bi-person-rolodex circle"></span>
-						<p class="title">Adam</p>
-						<p class="number grey-text text-darken-1">+2784 755 8780</p>
-						<span class="secondary-content"><span class="bi bi-three-dots more-btn"></span>
-						
-						<div class="more-tools-box no-active">
-							<p><span>Call</span></p>
-							<p><span>Edit</span></p>
-							<p><span>Delete</span></p>
-						</div>
-					</li>
-					<li class="collection-item avatar">
-						<span class="bi bi-person-rolodex circle"></span>
-						<p class="title">Alex</p>
-						<p class="number grey-text text-darken-1">+2784 755 8780</p>
-						<span class="secondary-content"><span class="bi bi-three-dots more-btn"></span>
-						
-						<div class="more-tools-box no-active">
-							<p><span>Call</span></p>
-							<p><span>Edit</span></p>
-							<p><span>Delete</span></p>
-						</div>
-					</li>
-			</div>
-			</ul>
-		</div>
-
+				<ul class="collection with-header"></ul>
+		</div>	
 	</div>
+<!-- Contact list section END -->
+
 
 </body>
 </html>

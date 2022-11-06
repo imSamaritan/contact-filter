@@ -9,12 +9,17 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
+.col {
+	margin: 0 auto !important;
+}
+
 .container header {
 	padding-top: 80px;
 	padding-bottom: 50px;
 }
 
 .filtering-section {
+	margin-top: 100px;
 	padding: 5px 0 50px 0;
 }
 
@@ -43,6 +48,7 @@ body {
 	background-color: white;
 	transition: transform .3s ease-in-out;
 	left: 10%;
+	transform-origin: right left;
 }
 
 .close-btn, .bi-person-plus-fill {
@@ -74,27 +80,36 @@ body {
 	font-size: 35px;
 }
 
-li {
+li.collection-item {
 	position: relative;
 	width: 100% !important;
 }
 
-.more-tools-box {
-	position: absolute;
+li .more-tools-box {
 	width: 80px;
-	padding: 15px 10px;
+	position: absolute;
+	z-index: 1000;
+	left: 75%;
+	top: 5%;
 	background-color: white;
-	box-shadow: 0 1px 2px rgba(0,0,0,2);
-	z-index: 1000 !important;
-	border-radius: 7px;
-	transition: transform .3s ease-in-out;
-	left: -450%;
-	top: -200%;
+	border-radius: 10px;
+	padding: 5px 0 2px 5px;
+	box-shadow: 0 1px 20px rgba(0,0,0,.3);
 }
 
 .more-tools-box > p {
 	margin: 15px 0;
 	cursor: pointer;
 	color: #333;
+}
+
+.more-tools-box .bi-x-circle-fill {
+	cursor: pointer;
+	transform: translate(10px, -10px);
+}
+
+.number-of-contacts {
+	font-weight: bolder;
+
 }
 
